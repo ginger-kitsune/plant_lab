@@ -1,0 +1,75 @@
+.header {
+    &__logo{
+        position: absolute;
+        top: 32px;
+        img{
+        height: 110px;
+        width: 102px;
+        }
+    }
+    &__nav{
+        margin-left: 342px;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-family: "Harmattan", sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 49px;
+            color: #fff;
+            list-style: none;
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+            }
+        }
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+        }
+    }
+    &__social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 102px;
+        height: 321px;
+        margin-top: 67px;
+        a {
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 32px;
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+                }
+        }
+    }
+    &__title {
+        color: $main-color;
+        position: absolute;
+        width: 567px;
+        height: 115px;
+        right: 0;
+        top: 326px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 115px;
+    }
+    &__subtitle {
+        position: absolute;
+        width: 299px;
+        height: 50px;
+        right: 10px;
+        top: 444px;
+        font-family: Harmattan, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 50px;
+        color: #fff;
+    }
+}

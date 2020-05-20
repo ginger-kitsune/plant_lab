@@ -1,0 +1,54 @@
+.promo {
+    background: url(../img/header-bg.jpg) center (center/cover) no-repeat;
+    min-height: 880px;
+    &__contacts {
+        position: absolute;
+        width: 622px;
+        height: 225px;
+        right: 0;
+        top: 756px;
+        background-color: $main-color;
+        font-size: 30px;
+        padding: 15px 40px;
+    }
+    &__or{
+        margin: 0 19px;
+        display: inline-block;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        font-family: Harmattan, sans-serif;
+        font-size: 20px;
+        width: 237px;
+        input{
+        height: 42px; 
+        margin-top: 8px;
+        padding: 11px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.5);  
+        &:last-of-type {
+            margin-bottom: 16px;
+            }
+        }
+    }
+    &__call {
+        position: absolute;
+        width: 223px;
+        height: 92px;
+        right: 40px;
+        top: 70px;
+        padding: 21px 38px;
+        background: rgba(255, 255, 255, 0.5);
+        a {
+            font-family: Harmattan;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 49px;
+            color: $grey;
+
+        }
+    }
+
+}

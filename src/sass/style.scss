@@ -1,9 +1,17 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/fonts";
+@import "base/variables";
+
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'Roboto Bold', sans-serif;
 }
 
 .container {
     position: relative;
-    max-width: 950px;
+    max-width: 1120px;
     margin: 0 auto;
 }
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
