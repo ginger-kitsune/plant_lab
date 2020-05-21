@@ -1,0 +1,25 @@
+.about {
+    min-height: 700px;
+    padding: 120px 0;
+    font-family: Harmattan, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+   
+    &__img {
+       img {
+        border-radius: 50%;
+        box-shadow: 0 0 50px 15px $main-color;
+       }
+    }
+    &__descr {
+        width: 392px;
+        margin-left: 141px;
+    
+    }
+}

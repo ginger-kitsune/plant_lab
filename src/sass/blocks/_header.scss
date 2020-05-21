@@ -49,13 +49,13 @@
     }
     &__title {
         color: $main-color;
+        font-family: 'Roboto Bold', sans-serif;
         position: absolute;
         width: 567px;
         height: 115px;
         right: 0;
         top: 326px;
         font-style: normal;
-        font-weight: 900;
         font-size: 120px;
         line-height: 115px;
     }
@@ -65,7 +65,6 @@
         height: 50px;
         right: 10px;
         top: 444px;
-        font-family: Harmattan, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 80px;
