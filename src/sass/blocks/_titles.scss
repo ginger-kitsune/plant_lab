@@ -1,0 +1,16 @@
+.title {
+    display: block;
+    height: 66px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #fff;
+    &__green {
+        background-color: $main-color;
+
+    }
+}

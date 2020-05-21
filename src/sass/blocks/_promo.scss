@@ -8,13 +8,14 @@
         right: 0;
         top: 756px;
         background-color: $main-color;
-        font-family: 'Roboto Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 30px;
+        font-weight: 700;
         padding: 15px 40px;
     }
     &__or{
         margin: 0 19px;
-        font-family: 'Roboto Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 30px;
         display: inline-block;
         
@@ -22,7 +23,7 @@
     &__form {
         display: flex;
         flex-direction: column;
-        font-family: Harmattan, sans-serif;
+        font-family: 'Harmattan', sans-serif;
         font-size: 20px;
         width: 237px;
         input{

@@ -1,7 +1,7 @@
 .about {
     min-height: 700px;
-    padding: 120px 0;
-    font-family: Harmattan, sans-serif;
+    padding: 125px 0;
+    font-family: 'Harmattan', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -10,7 +10,6 @@
         display: flex;
         align-items: center;
     }
-   
     &__img {
        img {
         border-radius: 50%;
@@ -20,6 +19,5 @@
     &__descr {
         width: 392px;
         margin-left: 141px;
-    
     }
 }

@@ -49,12 +49,13 @@
     }
     &__title {
         color: $main-color;
-        font-family: 'Roboto Bold', sans-serif;
+        font-family: 'Roboto', sans-serif;
         position: absolute;
         width: 567px;
         height: 115px;
         right: 0;
         top: 326px;
+        font-weight: 700;
         font-style: normal;
         font-size: 120px;
         line-height: 115px;
