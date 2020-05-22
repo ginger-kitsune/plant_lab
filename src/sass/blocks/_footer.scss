@@ -1,0 +1,57 @@
+.footer{
+    padding-top: 90px;
+    min-height: 304px;
+    &__logo{
+        position: absolute;
+        top: -23px;
+        img{
+            width: 135px;
+        }
+    }
+    &__nav {
+        margin: 0 auto;
+        width: 466px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-size: 30px;
+            line-height: 20px;
+            color: $grey;
+            &:hover {
+                text-decoration: none;
+                color: $main-color;
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 35px;
+        justify-content: space-between;
+        align-items: center;
+        width: 342px;
+        height: 42px;
+        a {
+            font-family: 'icomoon';
+            color: $main-color;
+            font-size: 32px;
+            &:hover {
+                text-decoration: none;
+                text-shadow: 0 0 3px $main-color;
+            }
+        }
+    }
+    &__copyright {
+        margin-top: 32px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        a {
+            color: $grey;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+
+}

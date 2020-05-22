@@ -1,0 +1,77 @@
+.contacts {
+    min-height: 933px;
+    background-color: $main-color;
+    padding: 20px 0 60px 0;
+    text-align: center;
+    font-size: 25px;
+    &__descr {
+        margin-top: 60px;
+    }
+    &__call {
+        margin: 0 auto;
+        margin-top: 21px;
+        width: 223px;
+        height: 92px;
+        padding: 21px 38px;
+        background: rgba(255, 255, 255, 0.5);
+        a {
+            font-family: Harmattan;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 49px;
+            color: $grey;
+            &:hover {
+                text-decoration: none;
+                color: $main-color
+            }
+        }
+    }
+    &__form {
+        width: 672px;
+        margin: 0 auto;
+        margin-top: 40px;
+        input, textarea {
+            height: 31px;
+            width: 313px;
+            padding-left: 9px;
+            margin-bottom: 25px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.5);
+            &:focus {
+                outline-style: none;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                box-shadow: none;
+            }
+        }
+        input {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }  
+        textarea {
+            height: 110px;
+
+        }
+    }
+    &__wrapper {
+        display: flex;
+        margin-bottom: 35px;
+    }
+    &__half {
+        width: 50%;
+        display: flex;
+        flex-direction: column; 
+    }
+    &__address {
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 195px;
+        height: 42px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    &__map {
+        margin-top: 32px;
+    }
+}
