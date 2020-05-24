@@ -11,10 +11,9 @@
         align-items: center;
     }
     &__img {
-       img {
         border-radius: 50%;
-        box-shadow: 0 0 50px 15px $main-color;
-       }
+        box-shadow: 0 0 60px $main-color;
+       
     }
     &__descr {
         width: 392px;

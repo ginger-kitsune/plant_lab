@@ -1,0 +1,212 @@
+@media (max-width: 991px) {
+    .container {
+        max-width: 90vw;
+    }
+    .services {
+        &__item {
+            max-width: 200px;
+        }
+    }
+    .portfolio {
+        padding-top: 50px;
+        &__item {
+            align-items: center;
+        }
+        &__descr {
+            width: 40%;
+        }
+        &__img{
+            width: 50%;
+        }
+    }
+    .contacts {
+        &__descr {
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .promo {
+        min-height: 100vw;
+        &__contacts {
+            top: 85vw;
+        }
+    }
+    .header {
+        &__nav{
+            margin-left: 150px;
+        }
+        &__title {
+            top: 300px;
+            font-size: 100px;
+        }
+        &__subtitle {
+            top: 420px;
+        }
+    }
+    .about {
+        padding: 150px 0 80px 0;
+        &__img {
+            width: 50%;
+        }
+        &__descr {
+            margin-left:80px;
+            width: 40%;
+        }
+    }
+    .services {
+        &__item {
+            width: 23%;
+        }
+        &__icon{
+            width: 90%;
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .portfolio {
+        min-height: 220vw;
+        padding: 50px 0;
+        &__item {
+            margin-top: 20px;
+        }
+        &__subtitle {
+            margin: 20px 0;
+        }
+        &__descr {
+            font-size: 19px;
+            line-height: 25px;
+        }
+    }
+    .contacts {
+        &__address {
+            margin-top: 30px;
+        }
+    }
+    .footer {
+        &__logo {
+            top: -50px;
+            width: 110px;
+        }
+        &__nav {
+            width: 50vw;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .promo {
+        &__contacts {
+            width: 90vw;
+            font-size: 23px;
+        }
+        &__or {
+            font-size: 23px;
+        }
+        &__form{
+            width: 45%;
+        }
+        &__call {
+            top: 57px;
+            width: 40%;
+        }
+    }
+    .header{
+        &__nav {
+            a {
+            font-size: 25px;
+            }
+        }
+        &__social {
+            height: 50vh;
+        }
+        &__title {
+            top: 200px;
+            font-size: 70px;
+        }
+        &__subtitle {
+            top: 300px;
+            font-size: 60px;
+        }
+    }
+    .about {
+        padding: 200px 0 50px 0;
+        .container {
+            flex-direction: column;;
+        }
+        &__descr {
+            margin: 25px 0;
+            width: 80%;
+        }
+    }
+    .title {
+        font-size: 35px;
+    }
+    .services{
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__descr {
+            margin-top: 20px;
+        }
+    }
+    .contacts {
+        &__form {
+            width: 95%;
+            input,textarea {
+                width: 90%;
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            top: 0px;
+            left: -15px;
+        }
+        &__nav{
+            a {
+                font-size: 23px;
+            }
+        }
+        &__social {
+            width: 40vw;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__item {
+            max-width: 90vw;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__tab {
+            width: 50vw;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &__content {
+            margin-top: 25px;
+        }
+    }
+    .feedback {
+        &__item {
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
