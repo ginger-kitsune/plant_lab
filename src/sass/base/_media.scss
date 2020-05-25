@@ -1,6 +1,6 @@
 @media (max-width: 991px) {
     .container {
-        max-width: 90vw;
+        max-width: 90%;
     }
     .services {
         &__item {
@@ -104,30 +104,27 @@
 @media (max-width: 575px) {
     .promo {
         &__contacts {
-            width: 90vw;
-            font-size: 20px;
-            text-align: center;
-            height: 40vw;
+            display: none;
         }
-        &__or {
-            font-size: 20px;
-            margin: 0 10px;
-        }
-        &__form{
-            width: 45%;
-        }
-        &__call {
-            padding: 0;
-            top: 25%;
-            width: 40%;
-            a {
-                display: block;
-                text-align: center;
-                transform: translateY(50%);
-                font-size: 25px;
-                margin: 0 auto;
-            }
-        }
+        // &__or {
+        //     font-size: 20px;
+        //     margin: 0 10px;
+        // }
+        // &__form{
+        //     width: 45%;
+        // }
+        // &__call {
+        //     padding: 0;
+        //     top: 25%;
+        //     width: 40%;
+        //     a {
+        //         display: block;
+        //         text-align: center;
+        //         transform: translateY(50%);
+        //         font-size: 25px;
+        //         margin: 0 auto;
+        //     }
+        // }
     }
     .header{
         &__social {
@@ -135,11 +132,12 @@
         }
         &__title {
             top: 200px;
-            font-size: 70px;
+            font-size: 60px;
         }
         &__subtitle {
             top: 300px;
-            font-size: 60px;
+            font-size: 50px;
+            text-align: right;
         }
         &__nav{
             position: fixed;
@@ -197,7 +195,11 @@
         }
     }
     .about {
-        padding: 200px 0 50px 0;
+        padding: 25px 0;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        min-height: 100vh;
         .container {
             flex-direction: column;;
         }
@@ -207,9 +209,19 @@
         }
     }
     .title {
-        font-size: 35px;
+        font-size: 30px;
     }
     .services{
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__item {
+           max-width: 100%;
+           margin-bottom: 10px;
+        }
+        &__icon {
+            width: 40%;
+        }
         &__subtitle {
             font-size: 18px;
         }
@@ -217,89 +229,21 @@
             margin-top: 20px;
         }
     }
-    .contacts {
-        &__form {
-            width: 95%;
-            input,textarea {
-                width: 90%;
-            }
-        }
-    }
-    .radio {
-        &_green {
-            &+label {
-                font-size: 18px;
-                line-height: 18px;
-            }
-        }
-    }
-    .footer {
-        &__logo {
-            top: 0px;
-            left: -15px;
-        }
-        &__nav {
+    .portfolio {
+        &__item {
             flex-direction: column;
+        }
+        &__item:nth-child(odd) {
+            flex-direction: column-reverse;
+        }
+        &__descr {
+            width: 95%;
             text-align: center;
-            margin-left: 40%;
         }
-        &__social {
-            width: 40vw;
+        &__more {
+            margin: 10px 0;
+            font-size: 19px;
         }
-    }
-}
-@media (max-width: 320px) {
-   .promo {
-       &__contacts {
-           display: none;
-       }
-   }
-   .header {
-       &__title{
-           font-size: 60px;
-       }
-       &__subtitle {
-           font-size: 50px;
-           text-align: right;
-       }
-   }
-   .about {
-       padding: 25px 0;
-       font-size: 18px;
-       line-height: 25px;
-       text-align: center;
-       min-height: 100vh;
-   }
-   .title {
-       font-size: 30px;
-   }
-   .services {
-       &__wrapper {
-           flex-direction: column;
-       }
-       &__item {
-          max-width: 100%;
-          margin-bottom: 10px;
-       }
-       &__icon {
-           width: 60%;
-       }
-    }
-   .portfolio {
-       &__item {
-           flex-direction: column;
-       }
-       &__item:nth-child(odd) {
-           flex-direction: column-reverse;
-       }
-       &__descr {
-           width: 95%;
-           text-align: center;
-       }
-       &__more {
-           margin: 10px 0;
-           font-size: 19px;
-       }
     }
     .contacts {
         font-size: 20px;
@@ -320,15 +264,48 @@
             width: 100%;
         }
         &__form {
-
+            padding-left: 15px;
+            width: 95%;
+            input,textarea {
+                width: 90%;
+            }
             input:last-of-type{
-              margin-bottom: 25px;  
+                margin-bottom: 25px;  
+              }
+        }
+    }
+    
+    .radio {
+        &_green {
+            &+label {
+                font-size: 18px;
+                line-height: 18px;
             }
         }
     }
     .footer {
+        &__logo {
+            top: 0px;
+            left: -15px;
+        }
+        &__nav {
+            flex-direction: column;
+            text-align: center;
+            margin-left: 30%;
+            a{
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+        &__social {
+            width: 40vw;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .footer {
         padding-top: 40px;
-        
+
         &__logo {
             top: -20px;
         }
@@ -336,5 +313,4 @@
             width: 80vw;
         }
     }
-   
 }
