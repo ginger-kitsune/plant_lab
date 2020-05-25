@@ -27,9 +27,9 @@
 }
 @media (max-width: 767px) {
     .promo {
-        min-height: 100vw;
+        min-height: 100vh;
         &__contacts {
-            top: 85vw;
+            top: 90vh;
         }
     }
     .header {
@@ -37,15 +37,18 @@
             margin-left: 150px;
         }
         &__title {
-            top: 300px;
+            top: 250px;
             font-size: 100px;
         }
         &__subtitle {
-            top: 420px;
+            top: 370px;
+        }
+        &__social {
+            height: 300px;
         }
     }
     .about {
-        padding: 150px 0 80px 0;
+        padding: 200px 0 80px 0;
         &__img {
             width: 50%;
         }
@@ -56,7 +59,7 @@
     }
     .services {
         &__item {
-            width: 23%;
+            max-width: 23%;
         }
         &__icon{
             width: 90%;
@@ -92,6 +95,9 @@
         }
         &__nav {
             width: 50vw;
+            a {
+                font-size: 23px;
+            }
         }
     }
 }
@@ -99,27 +105,33 @@
     .promo {
         &__contacts {
             width: 90vw;
-            font-size: 23px;
+            font-size: 20px;
+            text-align: center;
+            height: 40vw;
         }
         &__or {
-            font-size: 23px;
+            font-size: 20px;
+            margin: 0 10px;
         }
         &__form{
             width: 45%;
         }
         &__call {
-            top: 57px;
+            padding: 0;
+            top: 25%;
             width: 40%;
+            a {
+                display: block;
+                text-align: center;
+                transform: translateY(50%);
+                font-size: 25px;
+                margin: 0 auto;
+            }
         }
     }
     .header{
-        &__nav {
-            a {
-            font-size: 25px;
-            }
-        }
         &__social {
-            height: 50vh;
+            display: none;
         }
         &__title {
             top: 200px;
@@ -128,6 +140,60 @@
         &__subtitle {
             top: 300px;
             font-size: 60px;
+        }
+        &__nav{
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 70vh;
+            padding: 15px;
+            background-color: rgba(47,148, 68, 0.8);
+            margin-left: 0;
+            transition: 0.6s all;
+            &_active {
+                left: 0;
+            }
+            a {
+                padding-right: 0;
+                margin-top: 10px;
+                font-size: 25px;
+            }
+        }
+        
+        .hamburger {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 40px;
+            width: 30px;
+            height: 24px;
+            span {
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: $main-color;
+                margin-bottom: 5px;
+                box-shadow: 0 0 2px #fff;
+                transition: 0.5s all;
+            }
+            &_active{
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1){
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
         }
     }
     .about {
@@ -159,15 +225,23 @@
             }
         }
     }
+    .radio {
+        &_green {
+            &+label {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
     .footer {
         &__logo {
             top: 0px;
             left: -15px;
         }
-        &__nav{
-            a {
-                font-size: 23px;
-            }
+        &__nav {
+            flex-direction: column;
+            text-align: center;
+            margin-left: 40%;
         }
         &__social {
             width: 40vw;
@@ -175,38 +249,92 @@
     }
 }
 @media (max-width: 320px) {
-    .advantages {
+   .promo {
+       &__contacts {
+           display: none;
+       }
+   }
+   .header {
+       &__title{
+           font-size: 60px;
+       }
+       &__subtitle {
+           font-size: 50px;
+           text-align: right;
+       }
+   }
+   .about {
+       padding: 25px 0;
+       font-size: 18px;
+       line-height: 25px;
+       text-align: center;
+       min-height: 100vh;
+   }
+   .title {
+       font-size: 30px;
+   }
+   .services {
+       &__wrapper {
+           flex-direction: column;
+       }
+       &__item {
+          max-width: 100%;
+          margin-bottom: 10px;
+       }
+       &__icon {
+           width: 60%;
+       }
+    }
+   .portfolio {
+       &__item {
+           flex-direction: column;
+       }
+       &__item:nth-child(odd) {
+           flex-direction: column-reverse;
+       }
+       &__descr {
+           width: 95%;
+           text-align: center;
+       }
+       &__more {
+           margin: 10px 0;
+           font-size: 19px;
+       }
+    }
+    .contacts {
+        font-size: 20px;
+        &__call {
+            width: 60vw;
+            height: 60px;
+            padding: 0;
+            a {
+                line-height: 60px;
+            }
+        }
         &__wrapper {
             flex-direction: column;
-        }
-        &__item {
-            max-width: 90vw;
-        }
-    }
-    .catalog {
-        &__tabs {
-            flex-direction: column;
-            margin-top: 20px;
-        }
-        &__tab {
-            width: 50vw;
-            font-size: 16px;
+            padding-left: 10px;
             margin-bottom: 15px;
         }
-        &__content {
-            margin-top: 25px;
+        &__half {
+            width: 100%;
+        }
+        &__form {
+
+            input:last-of-type{
+              margin-bottom: 25px;  
+            }
         }
     }
-    .feedback {
-        &__item {
-            flex-direction: column;
-            margin-top: 50px;
+    .footer {
+        padding-top: 40px;
+        
+        &__logo {
+            top: -20px;
         }
-        &__img {
-            display: block;
-            margin: 0 auto;
-            width: 100px;
-            height: 100px;
+        &__social {
+            width: 80vw;
         }
     }
+   
 }

@@ -12,6 +12,7 @@
         padding-top: 60px;
         display: flex;
         justify-content: space-between;
+        z-index: 2;
         a {
             font-size: 30px;
             line-height: 49px;
@@ -66,5 +67,9 @@
         font-size: 80px;
         line-height: 50px;
         color: #fff;
+        
+    }
+    .hamburger {
+        display: none;
     }
 }
